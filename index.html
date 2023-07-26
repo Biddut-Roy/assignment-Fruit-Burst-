@@ -238,37 +238,35 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
               </div>
-              <label for="tw-modal" class="btn bg-white text-red-500 ">Details</label>
+              <button class="btn bg-white text-red-500 " onclick="my_modal_1.showModal()">Details</button>
             </div>
-            <!-- popup -->
-            <input type="checkbox" id="tw-modal" class="peer fixed appearance-none opacity-0" />
-      
-            <!-- Modal -->
-            <label for="tw-modal" class="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-780/30 opacity-0 transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:translate-y-8 peer-checked:scale-100 z-10">
-              <!-- Modal-box -->
-              <div class="max-h-[calc(100vh-5em)] h-fit max-w-lg scale-90 overflow-y-auto overscroll-contain rounded-md bg-white p-6 text-black shadow-2xl transition">
-                  <div class="card w-full lg:w-[100%] bg-base-100 shadow-xl space-y-3 mt-7 mx-auto">
-                      <figure class="px-10 pt-10">
-                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
-                      </figure>
-                      <div class="card-body items-center text-center">
-                        <h2>12.90$ - 18.85$</h2>
-                        <h2 class="card-title">Apples</h2>
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                        </div>
-                        <div class="flex">
-                          <button class="btn capitalize bg-white text-red-500 ">Close</button>
-                        <button class="btn btn-primary">BuyNow</button>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-            </label>
+        <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="card w-11/12 lg:w-[100%] bg-base-100 space-y-3 mt-7 mx-auto">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2>12.90$ - 18.85$</h2>
+        <h2 class="card-title">Apples</h2>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+      </div>
+      </div>
+    <div class="modal-action justify-around">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn btn-primary">BuyNow</button>
+    </div>
+  </form>
+</dialog>
             <!-- popup end -->
           </div>
           <!-- second card -->
@@ -280,42 +278,42 @@
               <h2>12.90$ - 18.85$</h2>
               <h2 class="card-title">Orange</h2>
               <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-red-500" />
               </div>
-              <label for="tw-modal-2" class="btn bg-white text-red-500 ">Details</label>
+              <button class="btn bg-white text-red-500 " onclick="my_modal_2.showModal()">Details</button>
             </div>
-            <!-- popup -->
-            <input type="checkbox" id="tw-modal-2" class="peer fixed appearance-none opacity-0" />
-            <!-- Modal -->
-            <label for="tw-modal-2" class="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-780/30 opacity-0 transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:translate-y-8 peer-checked:scale-100 z-10">
-              <!-- Modal-box -->
-              <div class="max-h-[calc(100vh-5em)] h-fit max-w-lg scale-90 overflow-y-auto overscroll-contain rounded-md bg-white p-6 text-black shadow-2xl transition">
-                <div class="card w-11/12 lg:w-[100%]   bg-base-100 shadow-xl space-y-3 mt-7 mx-auto">
-                  <figure class="px-10 pt-10">
-                    <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2>12.90$ - 18.85$</h2>
-                    <h2 class="card-title">Orange</h2>
-                    <div class="rating">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                    </div>
-                        <div class="flex">
-                            <button class="btn capitalize bg-white text-red-500 ">Close</button>
-                          <button class="btn btn-primary">BuyNow</button>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-            </label>
+        <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="card w-11/12 lg:w-[100%]   bg-base-100 space-y-3 mt-7 mx-auto">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2>12.90$ - 18.85$</h2>
+        <h2 class="card-title">Orange</h2>
+        <div class="rating">
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+        </div>
+        
+      </div>
+      </div>
+    <div class="modal-action justify-around">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn btn-primary">BuyNow</button>
+    </div>
+  </form>
+</dialog>
             <!-- popup end -->
           </div>
           <!-- third card -->
@@ -327,42 +325,41 @@
               <h2>12.90$ - 18.85$</h2>
               <h2 class="card-title">Red Dragon</h2>
               <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-red-500" />
               </div>
-              <label for="tw-modal-3" class="btn bg-white text-red-500 ">Details</label>
+              <button class="btn bg-white text-red-500 " onclick="my_modal_3.showModal()">Details</button>
             </div>
-            <!-- popup -->
-            <input type="checkbox" id="tw-modal-3" class="peer fixed appearance-none opacity-0" />
-            <!-- Modal -->
-            <label for="tw-modal-3" class="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-780/30 opacity-0 transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:translate-y-8 peer-checked:scale-100 z-10">
-              <!-- Modal-box -->
-              <div class="max-h-[calc(100vh-5em)] h-fit max-w-lg scale-90 overflow-y-auto overscroll-contain rounded-md bg-white p-6 text-black shadow-2xl transition">
-                <div class="card w-11/12 lg:w-[100%]  bg-base-100 shadow-xl space-y-3 mt-7 mx-auto">
-                  <figure class="px-10 pt-10">
-                    <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2>12.90$ - 18.85$</h2>
-                    <h2 class="card-title">Red Dragon</h2>
-                    <div class="rating">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                    </div>
-                        <div class="flex">
-                            <button class="btn capitalize bg-white text-red-500 ">Close</button>
-                          <button class="btn btn-primary">BuyNow</button>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-            </label>
+        <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="card w-11/12 lg:w-[100%]  bg-base-100  space-y-3 mt-7 mx-auto">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2>12.90$ - 18.85$</h2>
+        <h2 class="card-title">Red Dragon</h2>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+      </div>
+      </div>
+    <div class="modal-action justify-around">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn btn-primary">BuyNow</button>
+    </div>
+  </form>
+</dialog>
             <!-- pop end -->
           </div>
           <!-- fourth card -->
@@ -374,43 +371,43 @@
               <h2>12.90$ - 18.85$</h2>
               <h2 class="card-title">Banana</h2>
               <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-red-500" />
               </div>
               <!--  -->
-              <label for="tw-modal-4" class="btn bg-white text-red-500 ">Details</label>
+              <button class="btn bg-white text-red-500 " onclick="my_modal_4.showModal()">Details</button>
             </div>
-            <!-- popup -->
-            <input type="checkbox" id="tw-modal-4" class="peer fixed appearance-none opacity-0" />
-            <!-- Modal -->
-            <label for="tw-modal-4" class="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-780/30 opacity-0 transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:translate-y-8 peer-checked:scale-100 z-10">
-              <!-- Modal-box -->
-              <div class="max-h-[calc(100vh-5em)] h-fit max-w-lg scale-90 overflow-y-auto overscroll-contain rounded-md bg-white p-6 text-black shadow-2xl transition">
-                <div class="card w-11/12 lg:w-[100%]  bg-base-100 shadow-xl space-y-3 mt-7 mx-auto">
-                  <figure class="px-10 pt-10">
-                    <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2>12.90$ - 18.85$</h2>
-                    <h2 class="card-title">Banana</h2>
-                    <div class="rating">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                    </div>
-                        <div class="flex">
-                            <button class="btn capitalize bg-white text-red-500 ">Close</button>
-                          <button class="btn btn-primary">BuyNow</button>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-            </label>
+        <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="card w-11/12 lg:w-[100%]  bg-base-100  space-y-3 mt-7 mx-auto">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2>12.90$ - 18.85$</h2>
+        <h2 class="card-title">Banana</h2>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+
+      </div>
+      </div>
+    <div class="modal-action flex justify-around">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+      <button class="btn btn-primary">BuyNow</button>
+    </div>
+  </form>
+</dialog>
             <!-- pop end -->
           </div>
         </div>
